@@ -37,20 +37,19 @@ const Login = () => {
   };
 
   return (
-    <div class="container">
-        <h1>Welcome Back!</h1>
-        <p class="tagline">Log in to your account</p>
+    <div className='login'>
+      <div className='loginForm'>
+        <div className='loginHead'>
+          <h1>Login</h1>
+        </div>
         <form onSubmit={handleLoginSubmit}>
-            <div class="input-container">
-                <i class="fas fa-user"></i>
-                <input type="email" placeholder="Email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-            </div>
-            <div class="input-container">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-            </div>
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <label htmlFor="password">Password:</label>
+          <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <button type="submit">Login</button>
         </form>
-        <button type="submit" class="btn login">Login</button>
+      </div>
     </div>
   );
 };
