@@ -23,39 +23,41 @@ body {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+    width: 50%; /* Adjusted for desktop layout */
+    max-width: 800px; /* Increased max-width for desktop */
+    min-width: 400px; /* Added min-width to ensure it doesn't shrink too much */
 }
 
 .logo img {
-    width: 80px;
+    width: 100px; /* Slightly increased size for desktop */
     margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2.5em; /* Increased font size for desktop */
+    margin-bottom: 20px; /* Increased margin for better spacing */
     color: #333;
 }
 
 .tagline {
-    font-size: 1em;
-    margin-bottom: 30px;
+    font-size: 1.2em; /* Increased font size for desktop */
+    margin-bottom: 40px; /* Increased margin for better spacing */
     color: #333;
 }
 
 .buttons {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row; /* Changed to row for desktop layout */
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Increased gap for better spacing on desktop */
 }
 
 .btn {
-    padding: 15px;
-    width: 100%;
+    padding: 15px 30px; /* Adjusted padding for desktop */
+    width: auto; /* Changed width to auto to fit content */
     border: none;
     border-radius: 25px;
-    font-size: 1em;
+    font-size: 1.2em; /* Increased font size for desktop */
     cursor: pointer;
     font-weight: bold;
 }
@@ -68,4 +70,14 @@ h1 {
 .signup {
     background-color: #b7d9e6;
     color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 70%; /* Adjust for smaller screens */
+    }
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
 }
