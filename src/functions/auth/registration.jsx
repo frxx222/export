@@ -14,18 +14,17 @@ const Registration = () => {
   };
 
   return (
-    <div className='registration'>
-      <div className='registration-content'>
-        <h1>Hatid</h1>
-        <div className='registration-buttons'>
-          <button onClick={handleNavigateToLogin}>
-            Login
-          </button>
-          <button onClick={handleNavigateToSignup}>
-            Sign Up
-          </button>
+    <div class="container">
+        <h1>EXPORTEASE</h1>
+        <p class="tagline">Simplifying fisheries, empowering communities.</p>
+        <div class="buttons">
+            <button onClick={handleNavigateToLogin}>
+                Login
+            </button>
+            <button onClick={handleNavigateToSignup}>
+                Sign Up
+            </button>
         </div>
-      </div>
     </div>
   );
 };
