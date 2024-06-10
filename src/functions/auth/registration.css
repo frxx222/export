@@ -1,13 +1,8 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-}
-
-body, html {
-    height: 100%;
 }
 
 body {
@@ -17,67 +12,38 @@ body {
     align-items: center;
 }
 
-.container {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 50%; /* Adjusted for desktop layout */
-    max-width: 800px; /* Increased max-width for desktop */
-    min-width: 400px; /* Added min-width to ensure it doesn't shrink too much */
-}
-
-.logo img {
-    width: 100px; /* Slightly increased size for desktop */
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 2.5em; /* Increased font size for desktop */
-    margin-bottom: 20px; /* Increased margin for better spacing */
-    color: #333;
-}
-
-.tagline {
-    font-size: 1.2em; /* Increased font size for desktop */
-    margin-bottom: 40px; /* Increased margin for better spacing */
-    color: #333;
-}
-
-.buttons {
+.registration {
     display: flex;
-    flex-direction: row; /* Changed to row for desktop layout */
-    justify-content: center; /* Center the buttons */
-    gap: 20px; /* Increased gap for better spacing on desktop */
+    align-items: center;
+    justify-content: center; 
+    height: 100vh; 
+  }
+  
+.registration-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: lightblue;
 }
-
-.btn {
-    padding: 15px 30px; /* Adjusted padding for desktop */
-    width: auto; /* Changed width to auto to fit content */
+.registration-content h1 {
+    margin-bottom: 300px;
+    text-align: center;
+}
+.registration-buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
     border: none;
-    border-radius: 25px;
-    font-size: 1.2em; /* Increased font size for desktop */
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.login {
-    background-color: #00aaff;
-    color: #fff;
-}
-
-.signup {
-    background-color: #b7d9e6;
-    color: #fff;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .container {
-        width: 70%; /* Adjust for smaller screens */
-    }
-    .buttons {
-        flex-direction: column; /* Stack buttons vertically on smaller screens */
-    }
 }
